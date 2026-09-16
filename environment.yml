@@ -1,0 +1,28 @@
+name: devskin-snatac-release
+# Reconstructed release environment. Python pins are supported by the
+# publication-QC/Python snapshot; R pins are supported by the independent
+# GO-capable R environment verification at 2026-09-15 14:50 CST.
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - numpy=1.26.4
+  - pandas=2.0.3
+  - matplotlib=3.9.3
+  - anndata=0.10.9
+  - scanpy=1.10.4
+  - scipy=1.14.1
+  - seaborn=0.13.2
+  - h5py=3.12.1
+  - pillow=9.2.0
+  - r-base=4.2.2
+  - bioconductor-clusterprofiler=4.6.0
+  - bioconductor-org.rn.eg.db=3.16.0
+  - pip
+  - pip:
+      - snapatac2==2.7.1
+      - polars==1.16.0
+      - MACS3==3.0.2
+      - harmonypy==0.0.10
+      - pyBigWig
