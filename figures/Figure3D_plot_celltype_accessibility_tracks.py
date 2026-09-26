@@ -1,13 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Side-by-side peak tracks from CPM bigWig coverage —— 复现参考图峰值 + 保留自定义风格。
-
-与参考脚本一致(决定峰值): 用 bigWig 覆盖度; 窗口为 TSS 上游 2 kb、下游 1 kb;
-y 轴按每个基因列的全细胞类型最大值统一缩放(per-column)。
-自定义风格: 细胞顺序/配色与 UMAP 一致; 基因结构按链向红蓝; 整列分格; 基因名在框下; 可编辑字体。
-
-数据(本地): peak_plot/data/{bigwig/*.bw, Rattus_norvegicus.mRatBN7.2.dna.chr.gtf.gz, merged_peaks.bed}
+Side-by-side peak tracks from CPM bigWig coverage
 """
 import argparse
 import gzip
