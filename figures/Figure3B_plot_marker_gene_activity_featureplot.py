@@ -1,12 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """Final archived renderer for Figure 3B marker gene-activity UMAPs.
-
-Redraw of ``featureplot_cmap_comparison_sort_F3.png`` so the colour mapping
-matches the frozen Figure 3C matrix (``RdBu_r``).  Values are the log1p of
-library-size-normalised gene activity (normalize_total to 1e4, then log1p),
-i.e. the same transformation used by the original feature plot.  Colour range
-is ``vmin=0`` to the 99th percentile of the displayed values.
 """
 import argparse
 from pathlib import Path
